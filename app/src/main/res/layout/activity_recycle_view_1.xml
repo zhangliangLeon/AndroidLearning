@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecycleView_1.RecycleView_1Activity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <Button
+        android:id="@+id/LinearRecycleView_1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinearRecycleView"
+        android:textAllCaps="false">
+    </Button>
+
+    <Button
+        android:id="@+id/GridRecycleView_1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridRecycleView"
+        android:textAllCaps="false">
+    </Button>
+    <Button
+        android:id="@+id/StaggerRecycleView_1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StaggerRecycleView"
+        android:textAllCaps="false">
+    </Button>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intent.IntentPassForwardMsgMainActivity"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/intent_test_name"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:hint="name"
+        android:textSize="40sp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/intent_test_tel"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:hint="tel"
+        android:textSize="40sp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/intent_test_name"
+        android:layout_centerHorizontal="true">
+    </EditText>
+
+    <Button
+        android:id="@+id/intent_pass_forward_button"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:text="submit"
+        android:textSize="40sp"
+        android:background="@drawable/btn_3"
+        android:layout_below="@+id/intent_test_tel"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+</RelativeLayout>

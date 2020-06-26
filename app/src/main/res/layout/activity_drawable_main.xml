@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drawable.DrawableMainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <Button
+        android:id="@+id/StateListDrawableButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="StateListDrawable"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp">
+    </Button>
+    <Button
+        android:id="@+id/ShapeDrawableButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="ShapeDrawable"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp">
+    </Button>
+
+    <Button
+        android:id="@+id/LevelListDrawableButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="LevelListDrawable"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp">
+    </Button>
+
+</LinearLayout>

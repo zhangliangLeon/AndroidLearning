@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Animation.AnimationMainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/testRotate"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="TestRotate"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false">
+    </Button>
+
+    <Button
+        android:id="@+id/testScale"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="TestScale"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/testTranslate"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="TestTranslate"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/testAlpha"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="TestAlpha"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/testObjectAnimator"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="TestObjectAnimator"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+
+</LinearLayout>

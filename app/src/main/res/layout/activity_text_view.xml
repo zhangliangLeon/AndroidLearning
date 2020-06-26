@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextViewActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testing TextView"
+        android:textSize="30sp">
+    </TextView>
+
+    <!--测试超过文本框变为...-->
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Testing TextView"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="20dp">
+    </TextView>
+
+    <!--测试下划线-->
+    <TextView
+        android:id="@+id/TextView_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testing TextView"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testing TextView"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/drawable_01">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呜呜呜呜呜呜~~~~ 况且况且况且"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    </TextView>
+
+
+
+
+</LinearLayout>

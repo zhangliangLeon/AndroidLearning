@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActionBar.ActionBarMainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/ActionbarButton"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:background="@drawable/shapedrawable_test_3"
+        android:text="ActionBarOpenCloseTest"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp">
+    </Button>
+    <Button
+        android:id="@+id/ActionbarActionItemButton"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:background="@drawable/shapedrawable_test_3"
+        android:text="ActionbarActionItemTest"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp">
+    </Button>
+
+    <Button
+        android:id="@+id/ActionBarBackButton"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:background="@drawable/shapedrawable_test_3"
+        android:text="ActionBarBackTest"
+        android:textAllCaps="false">
+    </Button>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerLayoutActivity"
+    android:id="@+id/drawerlayout"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是主界面"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            >
+        </TextView>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#FFFF00"
+        >
+        <ListView
+            android:id="@+id/drawerlayoutListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

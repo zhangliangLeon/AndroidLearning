@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="name_1">name_1</string>
+    <string name="name_2">name_2</string>
+    <string name="name_3">name_3</string>
+    <string name="name_4">name_4</string>
+    <string name="name_5">name_5</string>
+    <string name="name_6">name_6</string>
+
+    <string name="info_1">info_1</string>
+    <string name="info_2">info_2</string>
+    <string name="info_3">info_3</string>
+    <string name="info_4">info_4</string>
+    <string name="info_5">info_5</string>
+    <string name="info_6">info_6</string>
+
+</resources>

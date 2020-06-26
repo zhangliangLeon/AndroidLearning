@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dialog.DialogMainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/AlertDialogButton_1"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="NormalAlertDialog"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/AlertDialogButton_2"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="ListAlertDialog"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/AlertDialogButton_3"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="SingleChoiceAlertDialog"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/AlertDialogButton_4"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="MultiChoiceAlertDialog"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/AlertDialogButton_5"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="DIYAlertDialog"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/TimePickerDialog"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="TimePickerDialog"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/DatePickerDialog"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="DatePickerDialog"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/PopupWindow"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="PopupWindow"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/NotificationButton"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="Notification"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/BroadCast"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="BroadCast"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            >
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

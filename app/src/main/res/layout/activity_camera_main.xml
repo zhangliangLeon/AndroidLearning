@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Camera.CameraMainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/Camera_Pic_1"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="Camera_Pic_1"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp">
+    </Button>
+
+    <Button
+        android:id="@+id/FromPics"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="从相册选取"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp">
+    </Button>
+</LinearLayout>

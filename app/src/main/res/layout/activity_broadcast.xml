@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Broadcast.BroadcastActivity"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/StartBroadcastButton"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="开始广播"
+        android:textSize="20sp"
+        android:background="@drawable/btn_3">
+    </Button>
+
+</LinearLayout>

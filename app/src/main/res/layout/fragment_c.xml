@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8C00"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/ChangeFragmentTextButton"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="更换文字"
+        android:textSize="20sp"
+        android:background="@drawable/btn_3">
+    </Button>
+    <Button
+        android:id="@+id/ChangeFragmentButton_1"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="更换CFragment为AFragment"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_3">
+    </Button>
+    <TextView
+        android:id="@+id/cFragmentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="I am c TextView"
+        android:gravity="center"
+        android:textSize="40sp">
+    </TextView>
+
+</LinearLayout>

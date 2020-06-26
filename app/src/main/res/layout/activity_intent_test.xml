@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intent.IntentTestActivity"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/myTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的电话是18668831517"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp">
+    </TextView>
+    <Button
+        android:id="@+id/telButton"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:background="@drawable/btn_3"
+        android:text="拨打电话"
+        android:layout_marginBottom="10dp">
+    </Button>
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:background="@drawable/btn_3"
+        android:text="发送短信">
+    </Button>
+</LinearLayout>

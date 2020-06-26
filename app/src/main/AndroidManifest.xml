@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".Internet.Volley.ImageRequestActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".Internet.InternetMainActivity" />
+        <activity android:name=".Internet.Volley.VolleyTestActivity" />
+        <activity android:name=".AIDLTest.AidlActivity" />
+
+        <service
+            android:name=".AIDLTest.AIDLService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.testAidl" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".BindService.MessengerService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.service.messengerservice" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".BindService.ExtendBinderService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".BindService.BIndServiceMainActivity" />
+        <activity android:name=".GpsActivity" />
+        <activity android:name=".SensorActivity" />
+        <activity android:name=".HandlerService.StartServiceTestActivity" />
+
+        <service
+            android:name=".HandlerService.StartServiceTest"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".HandlerService.HandlerTestActivity" />
+        <activity android:name=".Camera.FromPicsActivity" />
+        <activity android:name=".Camera.Camera_1Activity" />
+        <activity android:name=".Camera.CameraMainActivity" />
+        <activity android:name=".Media.VideoPaly_1Activity" />
+        <activity
+            android:name=".Media.VideoPlayActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Media.MusicPlay_1Activity" />
+        <activity android:name=".Media.MusicPlayActivity" />
+        <activity android:name=".Media.MediaMainActivity" />
+        <activity android:name=".Animation.ObjectAnimatorActivity" />
+        <activity android:name=".Animation.AnimationMainActivity" />
+        <activity android:name=".Paint.DrawBoardActivity" />
+        <activity android:name=".Paint.DrawBitmapActivity" />
+        <activity android:name=".Paint.DrawTextActivity" />
+        <activity android:name=".Paint.DrawMainActivity" />
+        <activity android:name=".Paint.DrawARobotActivity" />
+        <activity android:name=".Paint.CanvasActivity" />
+        <activity android:name=".Dialog.BroadCastActivity" />
+        <activity android:name=".Dialog.DetailActivity" />
+        <activity android:name=".Dialog.DIYAlertDialogActivity" />
+        <activity android:name=".Dialog.DialogMainActivity" />
+        <activity android:name=".ActionBar.ActionBarBackActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActionBar.ActionBarBackActivity" />
+        </activity>
+        <activity android:name=".ActionBar.ActionItemActivity" />
+        <activity android:name=".ActionBar.ActionBarMainActivity" />
+        <activity android:name=".ActionBar.ActionBarTestActivity" />
+        <activity android:name=".Drawable.LevelListDrawableActivity" />
+        <activity android:name=".Drawable.ShapeDrawableActivity" />
+        <activity android:name=".Drawable.DrawableMainActivity" />
+        <activity android:name=".Drawable.StateListDrawableActivity" />
+        <activity android:name=".Menu.FriendCircleActivity" />
+        <activity android:name=".Menu.ContextMenuActivity" />
+        <activity android:name=".Menu.MenuMainActivity" />
+        <activity android:name=".Menu.OptionMenuActivity" />
+        <activity android:name=".GustureActivity" />
+        <activity android:name=".Fragment.FragmentTestContainerActivity" />
+        <activity android:name=".Intent.IntentPassBackMsgMainActivity" />
+        <activity android:name=".Intent.IntentPassBackMsgActivity" />
+        <activity android:name=".Intent.IntentPassForwardMsgActivity" />
+        <activity android:name=".Intent.IntentPassForwardMsgMainActivity" />
+        <activity android:name=".Intent.IntentFilterMainActivity" />
+        <activity android:name=".Intent.IntentFIlterActivity">
+            <intent-filter>
+
+                <!-- 用于指定activity可以响应的动作类型 -->
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 以何种方式接收intent请求的动作 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Intent.IntentTestActivity" />
+        <activity android:name=".RecycleView_1.Stagger.StaggerRecycleActivity" />
+        <activity android:name=".RecycleView_1.Grid.GridRecycleActivity" />
+        <activity android:name=".RecycleView_1.RecycleItemActivity" />
+        <activity android:name=".RecycleView_1.Linear.LinearRecycleActivity" />
+        <activity android:name=".RecycleView_1.RecycleView_1Activity" />
+        <activity android:name=".SwipeRefreshLayoutActivity" />
+        <activity android:name=".DrawerLayoutActivity" />
+        <activity android:name=".ViewFlipper" />
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".ImageSwitcherActivity" />
+        <activity android:name=".ProcessBarActivity" />
+        <activity android:name=".SwitchButtonActivity" />
+        <activity android:name=".Broadcast.BroadcastReceiverActivity" />
+        <activity android:name=".Broadcast.BroadcastActivity" />
+        <activity android:name=".DataStorage.InnerStorageActivity" />
+        <activity android:name=".DataStorage.SharedPreferenceActivity" />
+        <activity android:name=".DataStorage.DataStorageActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".MyButtonActivity" />
+        <activity android:name=".ClickEventActivity" />
+        <activity android:name=".Fragment.FragmentContainer_1Activity" />
+        <activity android:name=".Fragment.FragmentContainerActivity" />
+        <activity android:name=".StartActivityForResActivity" />
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".RecycleView.RecyclerViewStaggerItemActivity" />
+        <activity android:name=".RecycleView.RecyclerViewStaggerActivity" />
+        <activity android:name=".RecycleView.RecycleLinearViewItemActivity" />
+        <activity android:name=".RecycleView.RecycleLinearViewActivity" />
+        <activity android:name=".RecycleView.RecycleViewMainActivity" />
+        <activity android:name=".GridView.GridViewItemActivity" />
+        <activity android:name=".GridView.GridViewActivity" />
+        <activity android:name=".ListView.ListViewItemActivity" />
+        <activity android:name=".ListView.ListViewActivity" />
+        <activity android:name=".ImgViewActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".RadioActivity" />
+        <activity android:name=".EditTextViewActivity" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".TextViewActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
