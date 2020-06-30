@@ -561,6 +561,93 @@
           android:layout_marginTop="10dp">
       </Button>
 
+      <Button
+          android:id="@+id/AdHandlerButton"
+          android:layout_width="200dp"
+          android:layout_height="50dp"
+          android:text="AdHandlerButton"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:textAllCaps="false"
+          android:layout_marginTop="10dp">
+      </Button>
+
+      <Button
+          android:id="@+id/StartServiceButton_1"
+          android:layout_width="200dp"
+          android:layout_height="50dp"
+          android:text="StartServiceButton"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:textAllCaps="false"
+          android:layout_marginTop="10dp">
+      </Button>
+
+      <Button
+          android:id="@+id/BindServiceButton_1"
+          android:layout_width="200dp"
+          android:layout_height="50dp"
+          android:text="BindServiceButton"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:textAllCaps="false"
+          android:layout_marginTop="10dp">
+      </Button>
+
+      <Button
+          android:id="@+id/IntentServiceButton"
+          android:layout_width="200dp"
+          android:layout_height="50dp"
+          android:text="IntentServiceButton"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:textAllCaps="false"
+          android:layout_marginTop="10dp">
+      </Button>
+
+      <Button
+          android:id="@+id/ChildThreadChangeUiButton"
+          android:layout_width="300dp"
+          android:layout_height="50dp"
+          android:text="ChildThreadChangeUiButton"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:textAllCaps="false"
+          android:layout_marginTop="10dp">
+      </Button>
+
+      <Button
+          android:id="@+id/diyActionBarButton"
+          android:layout_width="200dp"
+          android:layout_height="50dp"
+          android:text="diyActionBarButton"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:textAllCaps="false"
+          android:layout_marginTop="10dp">
+      </Button>
+
+      <Button
+          android:id="@+id/FragmentNewButton"
+          android:layout_width="200dp"
+          android:layout_height="50dp"
+          android:text="FragmentNewButton"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:textAllCaps="false"
+          android:layout_marginTop="10dp">
+      </Button>
+
+      <Button
+          android:id="@+id/NewsClientButton"
+          android:layout_width="200dp"
+          android:layout_height="50dp"
+          android:text="NewsClientButton"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          android:textAllCaps="false"
+          android:layout_marginTop="10dp">
+      </Button>
 
    </LinearLayout>
 

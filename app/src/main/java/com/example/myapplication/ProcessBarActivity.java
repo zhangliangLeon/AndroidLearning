@@ -17,6 +17,8 @@ public class ProcessBarActivity extends AppCompatActivity {
     ProgressBar progressBar_horrizontal ;
     Integer processState;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +69,7 @@ public class ProcessBarActivity extends AppCompatActivity {
                 }
             }
         }).start();
+
 
 
 

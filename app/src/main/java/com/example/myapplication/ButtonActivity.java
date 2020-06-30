@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -15,6 +16,11 @@ public class ButtonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button);
 
+        if(savedInstanceState != null){
+            //如果上一次activity被回收了
+            String data = savedInstanceState.getString("tempData");
+        }
+
         btn_4 = findViewById(R.id.btn_4);
         btn_4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,5 +31,12 @@ public class ButtonActivity extends AppCompatActivity {
     }
     public void showToast(View view){
         Toast.makeText(ButtonActivity.this,"点击了btn_5",Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        String tempData = "我是临时数据";
+        outState.putString("tempData",tempData);
     }
 }

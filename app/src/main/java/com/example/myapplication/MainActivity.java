@@ -13,15 +13,17 @@ import android.widget.Button;
 import com.example.myapplication.AIDLTest.AidlActivity;
 import com.example.myapplication.ActionBar.ActionBarMainActivity;
 import com.example.myapplication.Animation.AnimationMainActivity;
-import com.example.myapplication.BindService.BIndServiceMainActivity;
 import com.example.myapplication.Broadcast.BroadcastReceiverActivity;
 import com.example.myapplication.Camera.CameraMainActivity;
 import com.example.myapplication.DataStorage.DataStorageActivity;
 import com.example.myapplication.Dialog.DialogMainActivity;
+import com.example.myapplication.DiyViews.ActionBar.UseActionBarActivity;
 import com.example.myapplication.Drawable.DrawableMainActivity;
 import com.example.myapplication.Fragment.FragmentContainerActivity;
 import com.example.myapplication.Fragment.FragmentContainer_1Activity;
 import com.example.myapplication.Fragment.FragmentTestContainerActivity;
+import com.example.myapplication.FragmentLearning_new.FragmentMainActivity;
+import com.example.myapplication.FragmentLearning_new.newsclient.NewsMainActivity;
 import com.example.myapplication.GridView.GridViewActivity;
 import com.example.myapplication.HandlerService.StartServiceTestActivity;
 import com.example.myapplication.Intent.IntentFilterMainActivity;
@@ -29,16 +31,18 @@ import com.example.myapplication.Intent.IntentPassBackMsgMainActivity;
 import com.example.myapplication.Intent.IntentPassForwardMsgMainActivity;
 import com.example.myapplication.Intent.IntentTestActivity;
 import com.example.myapplication.Internet.InternetMainActivity;
-import com.example.myapplication.Internet.Volley.VolleyTestActivity;
-import com.example.myapplication.ListView.ListViewActivity;
+import com.example.myapplication.ListView.ListViewMainActivity;
 import com.example.myapplication.Media.MediaMainActivity;
 import com.example.myapplication.Menu.MenuMainActivity;
-import com.example.myapplication.Paint.CanvasActivity;
-import com.example.myapplication.Paint.DrawARobotActivity;
 import com.example.myapplication.Paint.DrawMainActivity;
 import com.example.myapplication.RecycleView.RecycleViewMainActivity;
 import com.example.myapplication.RecycleView_1.RecycleView_1Activity;
+import com.example.myapplication.ServiceTest.StartService.StartServiceActivity;
+import com.example.myapplication.ServiceTest.bindService.BindServiceTestActivity;
+import com.example.myapplication.ServiceTest.intentService.IntentServiceActivity;
 import com.example.myapplication.Util.ToastUtil;
+import com.example.myapplication.handleTest.ChildThreadChangeUIActivity;
+import com.example.myapplication.handleTest.HandleTest_1;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -88,7 +92,14 @@ public class MainActivity extends AppCompatActivity {
     private Button SensorButton;
     private Button Service_1Button;
     private Button InternetButton;
-
+    private Button AdHandlerButton;
+    private Button StartServiceButton_1;
+    private Button BindServiceButton_1;
+    private Button IntentServiceButton;
+    private Button ChildThreadChangeUiButton;
+    private Button diyActionBarButton;
+    private Button FragmentNewButton;
+    private Button NewsClientButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
         ListViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, ListViewMainActivity.class);
                 startActivity(intent);
             }
         });
@@ -522,6 +533,78 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, InternetMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        AdHandlerButton = findViewById(R.id.AdHandlerButton);
+        AdHandlerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HandleTest_1.class);
+                startActivity(intent);
+            }
+        });
+
+        StartServiceButton_1 = findViewById(R.id.StartServiceButton_1);
+        StartServiceButton_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StartServiceActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        BindServiceButton_1 = findViewById(R.id.BindServiceButton_1);
+        BindServiceButton_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BindServiceTestActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        IntentServiceButton = findViewById(R.id.IntentServiceButton);
+        IntentServiceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, IntentServiceActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ChildThreadChangeUiButton = findViewById(R.id.ChildThreadChangeUiButton);
+        ChildThreadChangeUiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ChildThreadChangeUIActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        diyActionBarButton = findViewById(R.id.diyActionBarButton);
+        diyActionBarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, UseActionBarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        FragmentNewButton = findViewById(R.id.FragmentNewButton);
+        FragmentNewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FragmentMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        NewsClientButton = findViewById(R.id.NewsClientButton);
+        NewsClientButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NewsMainActivity.class);
                 startActivity(intent);
             }
         });

@@ -16,7 +16,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name="com.example.web.Http.OkHttpActivity"></activity>
+        <activity android:name="com.example.web.Http.HttpURLConnectionActivity" />
+        <activity android:name=".FragmentLearning_new.newsclient.NewListItemActivity" />
+        <activity android:name=".FragmentLearning_new.newsclient.NewsDetailForOnePageActivity" />
+        <activity android:name=".FragmentLearning_new.newsclient.NewsMainActivity" />
+        <activity android:name=".FragmentLearning_new.FragmentMainActivity" />
+        <activity android:name=".FragmentLearning_new.case_1.FragemetCase_1MainPageActivity" />
+        <activity android:name=".ListView.Diff.DiffListViewItemActivity" />
+        <activity android:name=".ListView.Diff.DiffListViewActivity" />
+        <activity android:name=".ListView.Simple.SimpleListViewItemActivity" />
+        <activity android:name=".ListView.Simple.SimpleListViewActivity" />
+        <activity android:name=".ListView.ListViewMainActivity" />
+        <activity android:name=".DiyViews.ActionBar.MyActionBar_1Activity" />
+        <activity android:name=".DiyViews.ActionBar.UseActionBarActivity" />
+        <activity android:name=".DiyViews.ActionBar.MyActionBarActivity" />
+        <activity android:name=".handleTest.ChildThreadChangeUIActivity" />
+        <activity android:name=".ServiceTest.intentService.IntentServiceActivity" />
 
+        <service android:name=".ServiceTest.intentService.IntentServiceTest" />
+
+        <activity android:name=".ServiceTest.bindService.BindServiceTestActivity" />
+        <activity android:name=".ServiceTest.StartService.StartServiceActivity" />
+        <activity android:name=".handleTest.AdActivity" />
+        <activity android:name=".handleTest.NewPageActivity" />
+        <activity android:name=".handleTest.HandleTest_1" />
         <activity android:name=".Internet.Volley.ImageRequestActivity" />
 
         <uses-library
@@ -163,6 +187,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".ServiceTest.StartService.StartService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".ServiceTest.bindService.BindServiceTest"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

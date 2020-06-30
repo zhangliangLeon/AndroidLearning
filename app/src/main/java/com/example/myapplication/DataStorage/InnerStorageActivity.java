@@ -5,17 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Environment;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.myapplication.R;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class InnerStorageActivity extends AppCompatActivity {
 
@@ -80,9 +83,41 @@ public class InnerStorageActivity extends AppCompatActivity {
                         }
                     }
                     break;
+
             }
 
 
         }
+    }
+    public String load(){
+        FileInputStream in = null;
+        BufferedReader reader = null;
+        StringBuilder content = new StringBuilder();
+        try{
+            in = openFileInput("data");
+            reader = new BufferedReader(new InputStreamReader(in));
+            String line = "";
+            while((line = reader.readLine()) != null){
+                content.append(line);
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            if(reader != null){
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return  content.toString();
+    }
+
+    public void putDataToSharedPreferences(){
+        SharedPreferences.Editor editor = getSharedPreferences("data",MODE_PRIVATE).edit();
+        editor.putString("key","val");
+        editor.apply();
     }
 }

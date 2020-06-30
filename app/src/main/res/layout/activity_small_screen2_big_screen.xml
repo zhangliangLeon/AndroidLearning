@@ -6,9 +6,11 @@
     android:paddingLeft="10dp"
     >
     <fragment
-        android:name="com.example.myapplication.Fragment.Small2BigScreen.ListFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/listfragment"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp">
+    </fragment>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
