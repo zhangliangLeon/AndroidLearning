@@ -90,13 +90,15 @@ public class NewsListFragment extends Fragment {
                         //更改双页详情
                         NewsDetailFragment fragment = (NewsDetailFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.news_detail_area);
                         if(fragment == null){
+
+                            NewsDetailFragment fragment_temp = NewsDetailFragment.getInstance(news.getTitle(),news.getContent());
                             //如果是第一次触发点击事件，那么此时detail的fragment还没有被创建，需要进行创建并赋值
                             FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                             //由于fragmentManger的任务都是异步执行的，所以希望立马执行的话需要添加executePendingTransactions
-                            fragmentManager.beginTransaction().add(R.id.news_detail_area,new NewsDetailFragment()).commit();
+                            fragmentManager.beginTransaction().add(R.id.news_detail_area,fragment_temp).commit();
                             fragmentManager.executePendingTransactions();
 
-                            fragment = (NewsDetailFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.news_detail_area);
+                            fragment = fragment_temp;
                         }
                         //刷新fragment数据
                         fragment.refresh(news.getTitle(),news.getContent());

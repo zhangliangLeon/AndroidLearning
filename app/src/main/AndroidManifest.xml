@@ -16,8 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.example.web.Http.OkHttpActivity"></activity>
-        <activity android:name="com.example.web.Http.HttpURLConnectionActivity" />
+        <service
+            android:name=".ServiceTest.DownLoadService.DownLoadService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".ServiceTest.DownLoadService.DownLoadActivity" />
+        <activity android:name=".web.Http.OkHttpActivity" />
+        <activity android:name=".web.Http.HttpURLConnectionActivity" />
         <activity android:name=".FragmentLearning_new.newsclient.NewListItemActivity" />
         <activity android:name=".FragmentLearning_new.newsclient.NewsDetailForOnePageActivity" />
         <activity android:name=".FragmentLearning_new.newsclient.NewsMainActivity" />

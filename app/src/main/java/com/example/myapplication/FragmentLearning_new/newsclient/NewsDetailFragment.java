@@ -14,25 +14,34 @@ import androidx.fragment.app.Fragment;
 import com.example.myapplication.R;
 
 public class NewsDetailFragment extends Fragment {
-    private View currentView;
     TextView newsTilte;
     TextView newsContent;
+
+    public static NewsDetailFragment getInstance(String title,String content){
+        NewsDetailFragment fragment = new NewsDetailFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("title",title);
+        bundle.putString("content",content);
+
+        fragment.setArguments(bundle);
+        return fragment;
+    }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.news_detail,container,false);
-        Log.d("NewsDetailFragment","onCreateView");
-        Log.d("NewsDetailFragment","view = " + view);
-        currentView = view;
+        String title = getArguments().get("title").toString();
+        String content = getArguments().get("content").toString();
+
+        ((TextView)view.findViewById(R.id.newsTilte)).setText(title);
+        ((TextView)view.findViewById(R.id.newsContent)).setText(content);
         return view;
     }
     public void refresh(String title, String content){
-        Log.d("NewsDetailFragment","refresh方法 tilte = " +title+ " ,content = "+content);
-        Log.d("NewsDetailFragment","view =  " + getView());
 
         newsTilte = getView().findViewById(R.id.newsTilte);
-        newsTilte = getView().findViewById(R.id.newsContent);
+        newsContent = getView().findViewById(R.id.newsContent);
         newsTilte.setText(title);
         newsContent.setText(content);
     }

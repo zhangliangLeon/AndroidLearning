@@ -1,4 +1,4 @@
-package com.example.web.Http;
+package com.example.myapplication.web.Http;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,7 @@ import com.example.myapplication.R;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class HttpURLConnectionActivity extends AppCompatActivity {

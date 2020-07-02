@@ -1,0 +1,27 @@
+此demo用于练习fragment主要用于适配平板电脑以及手机
+
+业务描述：
+手机上的newsClient应该是，打开为news列表，再点击列表中的各条新闻再跳转至详情页;
+平板电脑段的newsClient应该是，打开后为双屏模式，左屏显示news列表，右屏现实点击详情
+
+需要实现的Fragment和页面：
+基于上述业务描述，我们需要写两个fragment；Fragment的实现采用动态家在，写一个getInstance方法用于传参数。
+    1.NewsListFragment
+    2.NesDetailFragment
+
+手机端页面：
+需要编写一个手机端的主页面：
+    NewsMainActivity  ----------放在res/layout中
+需要编写一个手机端的详情页：
+    NewsDetailForOnePageActivity
+
+平板端页面：
+    NewsMainActivity ----------放在res/layout--sw600dp中
+
+
+1。进入newsClient时直接加载 NewsMainActivity,系统会自动根据屏幕的大小去加载res/layout或res/layout--sw600dp中的NewsMainActivity
+2。在NewsMainActivity中家在News列表Fragment
+3。NewsListFragment中，在onCreateView中需要对recycleview中的数据进行加载，并给每一条记录添加点击事件：
+    点击事件添加时需要判别手机还是平板：
+        如果是平板应该可以从当前的activity中直接获取到NewsDetailArea
+

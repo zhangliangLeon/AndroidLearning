@@ -11,11 +11,11 @@
         android:textSize="50sp"
         android:gravity="center">
     </TextView>
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/cardview_dark_background">
-    </view>
+    </View>
     <TextView
         android:id="@+id/newsContent"
         android:layout_width="match_parent"
