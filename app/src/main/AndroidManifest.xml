@@ -16,6 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+
         <service
             android:name=".ServiceTest.DownLoadService.DownLoadService"
             android:enabled="true"
@@ -24,17 +25,22 @@
         <activity android:name=".ServiceTest.DownLoadService.DownLoadActivity" />
         <activity android:name=".web.Http.OkHttpActivity" />
         <activity android:name=".web.Http.HttpURLConnectionActivity" />
+<!--=======
+        <activity android:name=".ViewPager.ViewPagerActivity"></activity>
+        <activity android:name="com.example.web.Http.OkHttpActivity" />
+        <activity android:name="com.example.web.Http.HttpURLConnectionActivity" />-->
+
         <activity android:name=".FragmentLearning_new.newsclient.NewListItemActivity" />
         <activity android:name=".FragmentLearning_new.newsclient.NewsDetailForOnePageActivity" />
         <activity android:name=".FragmentLearning_new.newsclient.NewsMainActivity" />
         <activity android:name=".FragmentLearning_new.FragmentMainActivity" />
-        <activity android:name=".FragmentLearning_new.case_1.FragemetCase_1MainPageActivity" />
+        <!--<activity android:name=".FragmentLearning_new.case_1.FragemetCase_1MainPageActivity" />-->
         <activity android:name=".ListView.Diff.DiffListViewItemActivity" />
         <activity android:name=".ListView.Diff.DiffListViewActivity" />
         <activity android:name=".ListView.Simple.SimpleListViewItemActivity" />
         <activity android:name=".ListView.Simple.SimpleListViewActivity" />
         <activity android:name=".ListView.ListViewMainActivity" />
-        <activity android:name=".DiyViews.ActionBar.MyActionBar_1Activity" />
+        <!--<activity android:name=".DiyViews.ActionBar.MyActionBar_1Activity" />-->
         <activity android:name=".DiyViews.ActionBar.UseActionBarActivity" />
         <activity android:name=".DiyViews.ActionBar.MyActionBarActivity" />
         <activity android:name=".handleTest.ChildThreadChangeUIActivity" />
