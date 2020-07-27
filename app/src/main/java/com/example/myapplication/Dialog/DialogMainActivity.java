@@ -264,6 +264,7 @@ public class DialogMainActivity extends AppCompatActivity {
                 case R.id.BroadCast:
                     Intent intent = new Intent(DialogMainActivity.this,BroadCastActivity.class);
                     startActivity(intent);
+                    //testing
             }
         }
     }
