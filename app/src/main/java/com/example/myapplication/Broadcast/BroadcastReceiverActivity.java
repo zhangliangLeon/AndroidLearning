@@ -39,6 +39,7 @@ public class BroadcastReceiverActivity extends AppCompatActivity {
         //我需要处理那些广播，添加到intentFilter中
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("com.leon.broadcast");
+        intentFilter.addCategory("aaaaaaA");
 
         LocalBroadcastManager.getInstance(this).registerReceiver(receiver,intentFilter);
 

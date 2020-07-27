@@ -2,13 +2,18 @@ package com.example.myapplication;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.myapplication.AIDLTest.AidlActivity;
 import com.example.myapplication.ActionBar.ActionBarMainActivity;
@@ -41,6 +46,7 @@ import com.example.myapplication.ServiceTest.StartService.StartServiceActivity;
 import com.example.myapplication.ServiceTest.bindService.BindServiceTestActivity;
 import com.example.myapplication.ServiceTest.intentService.IntentServiceActivity;
 import com.example.myapplication.Util.ToastUtil;
+import com.example.myapplication.ViewPager.ViewPagerActivity;
 import com.example.myapplication.handleTest.ChildThreadChangeUIActivity;
 import com.example.myapplication.handleTest.HandleTest_1;
 
@@ -100,6 +106,11 @@ public class MainActivity extends AppCompatActivity {
     private Button diyActionBarButton;
     private Button FragmentNewButton;
     private Button NewsClientButton;
+    private Button TestAdCardButton;
+    private Button TestAdCardGoneButton;
+    private Button ViewPagerButton;
+    private LinearLayout ad_card_container;
+    private ad_card_layout ad_card_layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -608,6 +619,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ad_card_layout = findViewById(R.id.ad_card_layout);
+        TestAdCardButton = findViewById(R.id.TestAdCardButton);
+        TestAdCardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ad_card_layout.getmAdButton().setText("我是大哥");
+            }
+        });
+
+        ViewPagerButton = findViewById(R.id.ViewPagerButton);
+        ViewPagerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ViewPagerActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

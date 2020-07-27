@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.example.web.Http.OkHttpActivity"></activity>
+        <activity android:name=".ViewPager.ViewPagerActivity"></activity>
+        <activity android:name="com.example.web.Http.OkHttpActivity" />
         <activity android:name="com.example.web.Http.HttpURLConnectionActivity" />
         <activity android:name=".FragmentLearning_new.newsclient.NewListItemActivity" />
         <activity android:name=".FragmentLearning_new.newsclient.NewsDetailForOnePageActivity" />
